@@ -1,0 +1,21 @@
+{
+  "name": "jquery-amend",
+  "main": "jquery-amend.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cockpit-project/jquery-amend",
+  "authors": [
+    "Stef Walter <stefw@redhat.com>"
+  ],
+  "description": "Incrementally amend the DOM",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "LGPLv2.1+",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
