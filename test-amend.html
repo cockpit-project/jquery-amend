@@ -90,6 +90,16 @@ test("amend attributes", function() {
     strictEqual (div.firstChild.nextSibling, second_child, "second child is the same");
 });
 
+test("amend element tag change", function() {
+    expect (1);
+
+    var $div = $('<div><span>A</span></div>');
+    var div = $div[0];
+
+    $div.amend('<button>B</button>');
+    equal (div.outerHTML, '<div><button>B</button></div>');
+});
+
 QUnit.start();
 
 </script>

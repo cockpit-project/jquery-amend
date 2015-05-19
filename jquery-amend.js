@@ -7,6 +7,7 @@
 
         if (depth > 0) {
             if (output.nodeType != input.nodeType ||
+                output.nodeName != input.nodeName ||
                 (output.nodeType != 1 && output.nodeType != 3)) {
                 output.parentNode.replaceChild(input.parentNode.removeChild(input), output);
                 return;
